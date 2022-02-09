@@ -1,0 +1,108 @@
+<html>
+<title>Learn computer science.</title>
+
+
+
+<header style="color:brown ;">
+
+    <style>
+        body {
+            background-color: rgb(56, 7, 7);
+            ;
+        }
+        
+        span {
+            color: white;
+        }
+        
+        h4 {
+            color: white;
+        }
+        
+        ol {
+            color: green;
+        }
+        
+        li {
+            color: red;
+        }
+    </style>
+
+
+</header>
+
+
+
+
+
+<script type="text/javascript">
+    function insert_name() {
+        var ol = document.getElementById("my_list");
+
+        var li = document.createElement("li");
+        new_name = "Email: " + document.getElementById("my_input").value;
+        li.appendChild(document.createTextNode(new_name));
+
+        ol.appendChild(li);
+
+    }
+</script>
+
+<h1 style="color:rgb(255, 253, 253) ;">I am like codes.</h1>
+<p style="color: rgb(255, 255, 255);">
+    <h1>My Name is Ali <br> My father is a programer. I like coding.</h1>
+
+
+
+
+
+    <ul>
+
+        <h1>you can<u> learn more</u> from web<u> <em>pages</em></u> like<br> <a href="https://www.khanacademy.org/">khanacadmy</a></h1>
+
+        <h1>you can learn more </h1>
+
+    </ul>
+</p>
+<h1>
+    <p>
+        <li>
+            <a href="https:///www.huawei.com">Huawei Log in</a>
+        </li>
+    </p>
+
+</h1>
+
+
+
+
+<a href="https://code.org ">Click here</a>
+
+
+
+
+
+
+
+
+
+
+
+
+<body>
+
+    <div>
+        <span>Enter New email</span>
+        <input id="my_input" type="text" minlength="15" />
+        <button onclick="insert_name()">Insert</button>
+    </div>
+    <div>
+        <h4>List of Emails</h4>
+        <ol id="my_list">
+
+        </ol>
+    </div>
+
+</body>
+
+</html>
