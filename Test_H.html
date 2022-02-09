@@ -1,0 +1,56 @@
+<html>
+<header>
+    <title>My Title</title>
+
+    <style>
+        body {
+            background-color: silver;
+        }
+        span {
+            color: white;
+        }
+        h4 {
+            color: white;
+        }
+        ol {
+            color: green;
+        }
+        li {
+            color: red;
+        }
+        
+    </style>
+
+</header>
+
+<script type="text/javascript">
+    function insert_name() {
+        var ol = document.getElementById("my_list");
+
+        var li = document.createElement("li");
+        new_name = "Email: " + document.getElementById("my_input").value;
+        li.appendChild(document.createTextNode(new_name));
+
+        ol.appendChild(li);
+
+    }
+</script>
+
+<body>
+    <div>
+        <span>Enter New email</span> 
+        <input id="my_input" type="text" minlength="15" />
+        <button onclick="insert_name()">Insert</button>
+    </div>
+    <div>
+        <h4>List of Emails</h4>
+        <ol id="my_list">
+
+        </ol>
+    </div>
+    
+
+
+</body>
+
+</html>
